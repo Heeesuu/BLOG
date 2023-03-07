@@ -107,7 +107,7 @@ const viewer1 = Editor.factory({
 });
 
 function showPage(pageNo) {
-  fetch(no + ".md")
+  fetch(pageNo + ".md")
     .then(reponse => response.text())
     .then(text => {
       viewer1.setMarkdown(text);
